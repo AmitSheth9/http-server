@@ -21,6 +21,6 @@ describe('cat CRUD API', () => {
     const cat = { name: 'felix', age: 9 };
     const res = await request(app).post('/cats').send(cat);
 
-    expect(res.body).toEqual(JSON.stringify(cat));
+    expect(res.body).toEqual(cat);
   });
 });
